@@ -1,0 +1,16 @@
+<?php
+
+namespace {%namespace%};
+
+use maodou\run\base\response\LogicResponse;
+use {%requestClassname%};
+use {%responseClassname%};
+
+class {%classname%}
+{
+	public function render({%requestClass%} $request,{%responseClass%} $response): LogicResponse
+	{
+        $data = null;
+        return $response->data($data);
+	}
+}

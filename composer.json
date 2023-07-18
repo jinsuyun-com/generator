@@ -1,0 +1,23 @@
+{
+    "name": "maodou/generator",
+    "description": "generator lib",
+    "type": "think-extend",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "liuqiandev",
+            "email": "310227477@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "maodou\\generator\\": "src"
+        }
+    },
+    "require": {
+        "topthink/think-migration": "^3.0",
+        "maodou/run": "~1.0",
+        "maodou/base": "~1.0"
+    }
+}

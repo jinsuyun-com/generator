@@ -1,0 +1,21 @@
+<?php
+
+namespace {%namespace%};
+
+
+use maodou\run\base\response\LogicResponse;
+use maodou\run\constant\app\AppNoticeType;
+use maodou\run\constant\app\AppResponseDataType;
+use maodou\run\constant\app\AppResponseType;
+
+class {%classname%} extends LogicResponse
+{
+    protected string $msg      = 'success';
+    protected int    $noticeType   = AppNoticeType::SILENT;
+    protected string $responseType = AppResponseType::JSON;
+    // 响应data类型
+    protected string $dataType = AppResponseDataType::MIXED;
+    // 响应data为collection/paginator时的子类型
+    protected string $baseType = 'mixed';
+
+}

@@ -1,0 +1,25 @@
+<?php
+namespace {%namespace%};
+
+
+use maodou\run\base\request\LogicRequest;
+use maodou\run\base\validate\AppValidateRule;
+
+/**
+ * Class {%classname%}
+ * @package {%namespace%}
+ * @property-read string $module
+ * @property-read string $namespace
+ * @property-read int $userId
+ * @property-read null|string $tokenName
+ * @property-read null|string $token
+ * @property-read bool $isDebug
+ */
+class {%classname%} extends LogicRequest
+{
+    public function setValidateRules()
+    {
+        // 参数自动验证规则
+        // $this->rules->push(AppValidateRule::title('id')->isRequire('缺少必要参数'));
+    }
+}

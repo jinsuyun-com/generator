@@ -1,0 +1,10 @@
+<?php
+
+namespace {%namespace%};
+
+use maodou\base\base\LogicTrait;
+class {%className%}
+{
+    use LogicTrait;
+
+}

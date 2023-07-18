@@ -1,0 +1,22 @@
+<?php
+
+namespace {%namespace%};
+
+use maodou\run\facade\AppRequest;
+
+class {%className%}
+{
+    public function handle($request, \Closure $next)
+    {
+        // todo:路由前置中间件逻辑
+        AppRequest::setModule('{%modulePathName%}');
+        AppRequest::setNamespace('{%moduleNameSpace%}');
+        AppRequest::init();
+
+        // 开启登录状态验证
+        AppRequest::setModuleUserType('{%moduleUserType%}');
+        AppRequest::auth();
+
+        return $next($request);
+    }
+}
