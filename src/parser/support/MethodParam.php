@@ -4,7 +4,6 @@
 namespace maodou\generator\parser\support;
 
 
-use maodou\run\constant\app\AppTypeHint;
 use maodou\generator\builder\ClassBuilder;
 use maodou\generator\builder\CodeBuilder;
 use maodou\generator\utils\TypeUtils;

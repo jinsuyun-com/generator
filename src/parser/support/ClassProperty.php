@@ -4,8 +4,6 @@
 namespace maodou\generator\parser\support;
 
 
-use maodou\run\constant\app\AppRouteDataType;
-use maodou\base\utils\UtilsTools;
 use maodou\generator\builder\ClassBuilder;
 use maodou\generator\builder\CodeBuilder;
 use think\Exception;
