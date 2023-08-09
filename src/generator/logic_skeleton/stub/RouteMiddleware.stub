@@ -2,7 +2,7 @@
 
 namespace {%namespace%};
 
-use maodou\run\facade\AppRequest;
+use app\facade\AppRequest;
 
 class {%className%}
 {
