@@ -56,8 +56,12 @@ class ClassProperty
         return $this->code;
     }
 
-    public function setType(\ReflectionNamedType | \ReflectionUnionType $type):self
+    public function setType(\ReflectionNamedType | \ReflectionUnionType | array $type):self
     {
+        if (is_array($type)){
+            $this->type = $type;
+            return $this;
+        }
         if($type->allowsNull()){
             $this->setIsNullable(true);
         }
