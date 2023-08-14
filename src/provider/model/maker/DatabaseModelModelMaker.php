@@ -4,6 +4,7 @@ namespace maodou\generator\provider\model\maker;
 
 
 
+use Carbon\Carbon;
 use maodou\base\exception\AppException;
 use maodou\base\utils\UtilsTools;
 use maodou\generator\contract\model\maker\ModelMakerAbstract;
@@ -19,6 +20,8 @@ use maodou\generator\support\traits\ClassMakerTrait;
  * @method DatabaseModelModelMaker setBindName(string $bindName)
  * @method DatabaseModelModelMaker setModelFile(string $modelFile)
  * @method DatabaseModelModelMaker setExtendModel(string $model)
+ * @method DatabaseModelModelMaker setTitle(string $title)
+ * @method DatabaseModelModelMaker setRemark(string $remark)
  */
 class DatabaseModelModelMaker extends ModelMakerAbstract
 {
@@ -30,6 +33,10 @@ class DatabaseModelModelMaker extends ModelMakerAbstract
     protected string $bindName = '';
     protected array $modelFunctions = [];
     protected string $realExtend;
+
+    protected string $title = '';
+
+    protected string $remark  = '';
 
     protected function getStub(): string
     {
@@ -115,7 +122,29 @@ class DatabaseModelModelMaker extends ModelMakerAbstract
         $this->parseModelPk();
         $this->parseModelConnection();
         $this->isTimestamp();
+        $this->parseTitle();
+        $this->parseRemark();
+        $this->parseCreateTime();
     }
+
+    protected function parseTitle():void
+    {
+        if (empty($this->title) === false){
+            $this->modelProperty[] = sprintf('protected string $maodouTitle = \'%s\';',$this->title);
+        }
+    }
+    protected function parseRemark():void
+    {
+        if (empty($this->remark) === false){
+            $this->modelProperty[] = sprintf('protected string $maodouRemark = \'%s\';',$this->remark);
+        }
+    }
+
+    protected function parseCreateTime():void
+    {
+        $this->modelProperty[] = sprintf('protected string $maodouCreateTime = \'%s\';',Carbon::now()->toDateTimeString());
+    }
+
 
     protected function isSoftDelete():self
     {
