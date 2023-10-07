@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\console\execute\provider\logic\contract;
+namespace jsy\generator\console\execute\provider\logic\contract;
 
 
-use maodou\generator\console\execute\contract\MakeClassByStub;
+use jsy\generator\console\execute\contract\MakeClassByStub;
 use think\helper\Str;
 
 abstract class BuildLogicAbstract extends MakeClassByStub

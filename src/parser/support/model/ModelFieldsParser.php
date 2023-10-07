@@ -1,13 +1,13 @@
 <?php
 
 
-namespace maodou\generator\parser\support\model;
+namespace jsy\generator\parser\support\model;
 
 
-use maodou\generator\parser\support\MethodParam;
-use maodou\generator\support\fields\constant\MaodouField;
-use maodou\generator\support\fields\ModelSchemaField;
-use maodou\generator\utils\TypeUtils;
+use jsy\generator\parser\support\MethodParam;
+use jsy\generator\support\fields\constant\JsyField;
+use jsy\generator\support\fields\ModelSchemaField;
+use jsy\generator\utils\TypeUtils;
 use phpDocumentor\Reflection\DocBlock\Tags\InvalidTag;
 use phpDocumentor\Reflection\DocBlockFactory;
 use phpDocumentor\Reflection\Types\Context;
@@ -24,7 +24,7 @@ use think\model\relation\HasOneThrough;
 use think\model\relation\MorphMany;
 use think\model\relation\MorphOne;
 use think\model\relation\MorphTo;
-use maodou\generator\support\fields\model\ModelFieldModel;
+use jsy\generator\support\fields\model\ModelFieldModel;
 
 class ModelFieldsParser
 {
@@ -260,7 +260,7 @@ class ModelFieldsParser
         $modelField = new ModelFieldModel($name);
         $isSelf = $method->getDeclaringClass()->getName() === $this->ref->getName();
         $modelField->setType($types);
-        $modelField->setPropertyType(MaodouField::FIELD_SOURCE_GETTER);
+        $modelField->setPropertyType(JsyField::FIELD_SOURCE_GETTER);
         $modelField->setIsSelf($isSelf);
         $comment = $modelField->getComment();
         $comment .= (string)$this->parseMethodComment($method);
@@ -296,7 +296,7 @@ class ModelFieldsParser
 
         $modelField = new ModelFieldModel($name,$types);
         $isSelf = $method->getDeclaringClass()->getName() === $this->ref->getName();
-        $modelField->setPropertyType(MaodouField::FIELD_SOURCE_GETTER);
+        $modelField->setPropertyType(JsyField::FIELD_SOURCE_GETTER);
         $modelField->setIsSelf($isSelf);
         if ($method->getDocComment() !== false) {
             $comment = $this->parseMethodComment($method);

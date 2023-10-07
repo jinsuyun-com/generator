@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\support\fields\model;
+namespace jsy\generator\support\fields\model;
 
 
-use maodou\generator\support\fields\ModelSchemaField;
+use jsy\generator\support\fields\ModelSchemaField;
 
 class ModelFieldModel extends ModelSchemaField
 {

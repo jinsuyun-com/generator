@@ -1,12 +1,12 @@
 <?php
 
 
-namespace maodou\generator\parser\support;
+namespace jsy\generator\parser\support;
 
 
-use maodou\generator\builder\ClassBuilder;
-use maodou\generator\builder\CodeBuilder;
-use maodou\generator\parser\support\method\MethodArgument;
+use jsy\generator\builder\ClassBuilder;
+use jsy\generator\builder\CodeBuilder;
+use jsy\generator\parser\support\method\MethodArgument;
 use JetBrains\PhpStorm\Pure;
 use ReflectionClass;
 use think\Exception;

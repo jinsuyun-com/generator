@@ -1,7 +1,7 @@
 <?php
 
 
-namespace maodou\generator\console\execute\contract;
+namespace jsy\generator\console\execute\contract;
 
 
 abstract class MakeClassByStub

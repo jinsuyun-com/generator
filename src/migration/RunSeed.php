@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\migration;
+namespace jsy\generator\migration;
 
 
-use maodou\base\utils\UtilsTools;
+use jsy\base\utils\UtilsTools;
 use Phinx\Db\Adapter\AdapterFactory;
 use Phinx\Db\Adapter\AdapterInterface;
 use Phinx\Seed\AbstractSeed;

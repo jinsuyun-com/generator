@@ -1,12 +1,12 @@
 <?php
 
 
-namespace maodou\generator\console\execute\provider\logic\provider;
+namespace jsy\generator\console\execute\provider\logic\provider;
 
 
-use maodou\base\exception\AppException;
-use maodou\base\utils\UtilsTools;
-use maodou\generator\console\execute\provider\logic\contract\BuildLogicAbstract;
+use jsy\base\exception\AppException;
+use jsy\base\utils\UtilsTools;
+use jsy\generator\console\execute\provider\logic\contract\BuildLogicAbstract;
 
 class BuildRequest extends BuildLogicAbstract
 {

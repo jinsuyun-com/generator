@@ -2,7 +2,7 @@
 
 namespace {%namespace%};
 
-use maodou\base\base\LogicTrait;
+use jsy\base\base\LogicTrait;
 class {%className%}
 {
     use LogicTrait;

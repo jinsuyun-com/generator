@@ -1,9 +1,9 @@
 <?php
 
 
-namespace maodou\generator\migration;
+namespace jsy\generator\migration;
 
-use maodou\generator\migration\support\MaodouModelField;
+use jsy\generator\migration\support\JsyModelField;
 use think\Collection;
 use think\helper\Str;
 
@@ -84,7 +84,7 @@ class FillMigration
         return "\t\t".'$table->setId(\''.$primaryName.'\')';
     }
     // 数据表字段
-    protected function getFieldCode(MaodouModelField $modelField)
+    protected function getFieldCode(JsyModelField $modelField)
     {
         if(strtolower($modelField->field_type) === 'json'){
             $this->jsonFields[] = $modelField->field_name;
@@ -114,7 +114,7 @@ class FillMigration
 
     }
     // 可指定长度的字段
-    protected function specifyLength(MaodouModelField $modelField)
+    protected function specifyLength(JsyModelField $modelField)
     {
         switch (true){
             case $modelField->field_type ==='string' | $modelField->field_type==='char':

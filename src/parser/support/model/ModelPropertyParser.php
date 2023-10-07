@@ -1,7 +1,7 @@
 <?php
 
 
-namespace maodou\generator\parser\support\model;
+namespace jsy\generator\parser\support\model;
 
 use think\Collection;
 use think\Exception;
@@ -52,8 +52,8 @@ class ModelPropertyParser
         $this->parseType();
         $this->parseDisuse();
         $this->parseReadonly();
-        $this->parseMaodouTitle();
-        $this->parseMaodouCreateTime();
+        $this->parseJsyTitle();
+        $this->parseJsyCreateTime();
         $this->parseRemark();
     }
 
@@ -221,15 +221,15 @@ class ModelPropertyParser
         $this->modelProperties->push($modelProperty);
     }
 
-    protected function parseMaodouTitle():void
+    protected function parseJsyTitle():void
     {
-        $modelProperty = $this->parseModelProperty('maodouTitle');
+        $modelProperty = $this->parseModelProperty('jsyTitle');
         $this->modelProperties->push($modelProperty);
     }
 
-    protected function parseMaodouCreateTime():void
+    protected function parseJsyCreateTime():void
     {
-        $modelProperty = $this->parseModelProperty('maodouCreateTime');
+        $modelProperty = $this->parseModelProperty('jsyCreateTime');
         $this->modelProperties->push($modelProperty);
     }
 

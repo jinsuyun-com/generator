@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\parser\support\model;
+namespace jsy\generator\parser\support\model;
 
 
-use maodou\base\base\model\ArrayModel;
+use jsy\base\base\model\ArrayModel;
 use think\helper\Str;
 
 class ModelMethod extends ArrayModel

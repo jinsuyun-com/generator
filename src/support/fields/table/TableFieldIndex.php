@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\support\fields\table;
+namespace jsy\generator\support\fields\table;
 
 
-use maodou\base\base\model\ArrayModel;
+use jsy\base\base\model\ArrayModel;
 use JetBrains\PhpStorm\ArrayShape;
 
 class TableFieldIndex extends ArrayModel

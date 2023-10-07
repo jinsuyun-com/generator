@@ -3,10 +3,10 @@
 namespace {%namespace%};
 
 
-use maodou\run\base\response\LogicResponse;
-use maodou\run\constant\app\AppNoticeType;
-use maodou\run\constant\app\AppResponseDataType;
-use maodou\run\constant\app\AppResponseType;
+use jsy\run\base\response\LogicResponse;
+use jsy\run\constant\app\AppNoticeType;
+use jsy\run\constant\app\AppResponseDataType;
+use jsy\run\constant\app\AppResponseType;
 
 class {%classname%} extends LogicResponse
 {

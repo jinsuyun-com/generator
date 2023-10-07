@@ -1,13 +1,13 @@
 <?php
 
 
-namespace maodou\generator\parser\support\model\driver\mysql;
+namespace jsy\generator\parser\support\model\driver\mysql;
 
 
-use maodou\generator\support\fields\constant\MaodouField;
-use maodou\generator\support\fields\table\TableFieldModel;
-use maodou\generator\support\fields\table\TableFieldIndex;
-use maodou\generator\utils\TypeUtils;
+use jsy\generator\support\fields\constant\JsyField;
+use jsy\generator\support\fields\table\TableFieldModel;
+use jsy\generator\support\fields\table\TableFieldIndex;
+use jsy\generator\utils\TypeUtils;
 use think\Collection;
 use think\Exception;
 use think\facade\Db;
@@ -142,13 +142,13 @@ class TableFieldsParser
             $tableFiled = new TableFieldModel($name,$options);
 
             if ($field['primary']) {
-                $tableFiled->addAddition(MaodouField::OPTION_PRIMARY);
+                $tableFiled->addAddition(JsyField::OPTION_PRIMARY);
             }
             if ($fieldConfig['unsigned']) {
-                $tableFiled->addAddition(MaodouField::OPTION_UNSIGNED);
+                $tableFiled->addAddition(JsyField::OPTION_UNSIGNED);
             }
             if ($fieldConfig['zerofill']) {
-                $tableFiled->addAddition(MaodouField::OPTION_ZEROFILL);
+                $tableFiled->addAddition(JsyField::OPTION_ZEROFILL);
             }
             $this->setField($tableFiled);
         }

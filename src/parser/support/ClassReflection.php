@@ -1,11 +1,11 @@
 <?php
 
 
-namespace maodou\generator\parser\support;
+namespace jsy\generator\parser\support;
 
 
-use maodou\base\utils\UtilsTools;
-use maodou\generator\utils\ClassParseUtils;
+use jsy\base\utils\UtilsTools;
+use jsy\generator\utils\ClassParseUtils;
 use phpDocumentor\Reflection\DocBlockFactory;
 use think\Collection;
 use think\Exception;
@@ -35,7 +35,7 @@ class ClassReflection
     protected array $sourceArray = [];
     protected array $importArray = [];
     /**
-     * @var \maodou\generator\parser\support\ClassProperty[]
+     * @var \jsy\generator\parser\support\ClassProperty[]
      */
     protected array $selfProperties = [];
     protected array $selfPropertyNames = [];
@@ -137,7 +137,7 @@ class ClassReflection
     }
 
     /**
-     * @return \maodou\generator\parser\support\ClassProperty[]
+     * @return \jsy\generator\parser\support\ClassProperty[]
      */
     public function getSelfProperties(): array
     {

@@ -1,11 +1,11 @@
 <?php
 
 
-namespace maodou\generator\utils;
+namespace jsy\generator\utils;
 
 
-use maodou\base\schema\constants\SchemaType;
-use maodou\base\utils\UtilsTools;
+use jsy\base\schema\constants\SchemaType;
+use jsy\base\utils\UtilsTools;
 use IteratorAggregate;
 use phpDocumentor\Reflection\Type;
 use phpDocumentor\Reflection\Types\AggregatedType;

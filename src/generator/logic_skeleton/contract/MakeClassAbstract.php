@@ -1,17 +1,16 @@
 <?php
 
 
-namespace maodou\generator\generator\logic_skeleton\contract;
+namespace jsy\generator\generator\logic_skeleton\contract;
 
-use maodou\base\exception\AppException;
-use maodou\base\utils\UtilsTools;
+use jsy\base\exception\AppException;
+use jsy\base\utils\UtilsTools;
 use think\console\Output;
 use think\facade\Config;
 
 /**
  * Desc
  * Class MakeClassAbstract
- * @package maodou\generator\generator\logic_skeleton\app_controller\contract
  */
 abstract class MakeClassAbstract
 {
@@ -25,7 +24,7 @@ abstract class MakeClassAbstract
         if($output instanceof Output){
             $this->output = $output;
         }
-        $this->config = Config::get('maodou_config');
+        $this->config = Config::get('jsy_config');
     }
 
     abstract protected function getStub();

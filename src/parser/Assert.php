@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\parser;
+namespace jsy\generator\parser;
 
 
-use maodou\generator\parser\support\ClassReflection;
+use jsy\generator\parser\support\ClassReflection;
 
 class Assert
 {

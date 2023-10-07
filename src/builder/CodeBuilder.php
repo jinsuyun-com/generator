@@ -1,7 +1,7 @@
 <?php
 
 
-namespace maodou\generator\builder;
+namespace jsy\generator\builder;
 
 
 class CodeBuilder

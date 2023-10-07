@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\parser\support\model;
+namespace jsy\generator\parser\support\model;
 
 
-use maodou\generator\parser\support\model\driver\mysql\FieldIndex;
+use jsy\generator\parser\support\model\driver\mysql\FieldIndex;
 use think\contract\Arrayable;
 use think\helper\Str;
 
@@ -134,7 +134,7 @@ class ModelField implements Arrayable,\ArrayAccess
 
     /**
      * @param bool $disuse
-     * @return \maodou\generator\parser\support\model\ModelField
+     * @return \jsy\generator\parser\support\model\ModelField
      */
     public function setDisuse(bool $disuse): self
     {
@@ -145,7 +145,7 @@ class ModelField implements Arrayable,\ArrayAccess
     /**
      * 设置树表中的字段类型
      * @param string $fieldType
-     * @return \maodou\generator\parser\support\model\ModelField
+     * @return \jsy\generator\parser\support\model\ModelField
      */
     public function setFieldType(string $fieldType): self
     {
@@ -180,7 +180,7 @@ class ModelField implements Arrayable,\ArrayAccess
 
     /**
      * @param bool $nullable
-     * @return \maodou\generator\parser\support\model\ModelField
+     * @return \jsy\generator\parser\support\model\ModelField
      */
     public function setNullable(bool $nullable): self
     {
@@ -190,7 +190,7 @@ class ModelField implements Arrayable,\ArrayAccess
 
     /**
      * @param bool $writable
-     * @return \maodou\generator\parser\support\model\ModelField
+     * @return \jsy\generator\parser\support\model\ModelField
      */
     public function setWritable(bool $writable): self
     {

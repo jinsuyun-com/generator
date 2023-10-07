@@ -1,7 +1,7 @@
 <?php
 
 
-namespace maodou\generator\parser\support;
+namespace jsy\generator\parser\support;
 
 
 class StringToStream

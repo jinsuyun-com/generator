@@ -1,14 +1,14 @@
 <?php
 
 
-namespace maodou\generator\support\fields;
+namespace jsy\generator\support\fields;
 
 
-use maodou\base\schema\interfaces\ISchemaField;
-use maodou\base\schema\Schema;
-use maodou\base\schema\support\SchemaField;
-use maodou\base\utils\UtilsTools;
-use maodou\generator\utils\TypeUtils;
+use jsy\base\schema\interfaces\ISchemaField;
+use jsy\base\schema\Schema;
+use jsy\base\schema\support\SchemaField;
+use jsy\base\utils\UtilsTools;
+use jsy\generator\utils\TypeUtils;
 use think\contract\Arrayable;
 
 abstract class ModelSchemaField implements Arrayable, \ArrayAccess,ISchemaField

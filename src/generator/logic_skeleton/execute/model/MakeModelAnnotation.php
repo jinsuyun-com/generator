@@ -1,11 +1,11 @@
 <?php
 
 
-namespace maodou\generator\generator\logic_skeleton\execute\model;
+namespace jsy\generator\generator\logic_skeleton\execute\model;
 
 
-use maodou\run\base\support\ModelAnnotationMethod;
-use maodou\base\utils\UtilsTools;
+use jsy\run\base\support\ModelAnnotationMethod;
+use jsy\base\utils\UtilsTools;
 use phpDocumentor\Reflection\DocBlock;
 use phpDocumentor\Reflection\DocBlock\DescriptionFactory;
 use phpDocumentor\Reflection\DocBlock\Serializer as DocBlockSerializer;

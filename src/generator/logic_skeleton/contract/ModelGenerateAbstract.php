@@ -1,14 +1,13 @@
 <?php
 
 
-namespace maodou\generator\generator\logic_skeleton\contract;
+namespace jsy\generator\generator\logic_skeleton\contract;
 
-use maodou\base\base\GetterSetter;
-use maodou\generator\generator\logic_skeleton\execute\model\MakeModel;
+use jsy\base\base\GetterSetter;
+use jsy\generator\generator\logic_skeleton\execute\model\MakeModel;
 
 /**
  * Class MakeModel
- * @package maodou\generator\generator\logic_skeleton\contrac\ModelGenerateAbstract
  * @method MakeModel setTimestampFields(array $timestampFields)
  * @method MakeModel setJsonFields(array $jsonFields)
  * @method MakeModel setIsJsonAssoc(bool $isJsonAssoc)

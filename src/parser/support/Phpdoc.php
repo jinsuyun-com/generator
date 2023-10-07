@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\parser\support;
+namespace jsy\generator\parser\support;
 
 
-use maodou\generator\builder\CodeBuilder;
+use jsy\generator\builder\CodeBuilder;
 use phpDocumentor\Reflection\DocBlock\Tag;
 use phpDocumentor\Reflection\DocBlock\Tags\BaseTag;
 use think\Exception;

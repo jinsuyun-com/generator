@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\parser\support\ref;
+namespace jsy\generator\parser\support\ref;
 
 
-use maodou\base\utils\UtilsTools;
+use jsy\base\utils\UtilsTools;
 use think\Collection;
 
 class ClassMap

@@ -2,7 +2,7 @@
 
 namespace {%namespace%};
 
-use maodou\run\base\response\LogicResponse;
+use jsy\run\base\response\LogicResponse;
 use {%requestClassname%};
 use {%responseClassname%};
 

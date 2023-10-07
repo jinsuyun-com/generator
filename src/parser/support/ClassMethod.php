@@ -1,11 +1,11 @@
 <?php
 
 
-namespace maodou\generator\parser\support;
+namespace jsy\generator\parser\support;
 
 
-use maodou\base\base\model\ArrayModel;
-use maodou\generator\builder\ClassBuilder;
+use jsy\base\base\model\ArrayModel;
+use jsy\generator\builder\ClassBuilder;
 use think\Exception;
 
 class ClassMethod extends ArrayModel
@@ -26,7 +26,7 @@ class ClassMethod extends ArrayModel
     protected array $body = [];
     protected string $returnType = 'mixed';
     /**
-     * @var \maodou\generator\parser\support\Phpdoc[]
+     * @var \jsy\generator\parser\support\Phpdoc[]
      */
     protected array $phpdoc = [];
     protected array $attributes = [];

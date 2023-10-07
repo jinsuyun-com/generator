@@ -1,14 +1,14 @@
 <?php
 
 
-namespace maodou\generator\utils\classloader;
+namespace jsy\generator\utils\classloader;
 
 
 use Composer\Autoload\ClassLoader;
-use maodou\base\base\collection\ObjectCollection;
-use maodou\base\utils\UtilsTools;
+use jsy\base\base\collection\ObjectCollection;
+use jsy\base\utils\UtilsTools;
 
-class MaodouClassLoader
+class JsyClassLoader
 {
     protected ObjectCollection $prefixDirsPsr4;
     protected array $classLoaders;

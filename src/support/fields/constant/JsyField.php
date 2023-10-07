@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\support\fields\constant;
+namespace jsy\generator\support\fields\constant;
 
 
-class MaodouField
+class JsyField
 {
     const FIELD_SOURCE_TABLE = 'table';
     const FIELD_SOURCE_GETTER = 'getter';

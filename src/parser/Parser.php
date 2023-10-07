@@ -1,7 +1,7 @@
 <?php
 
 
-namespace maodou\generator\parser;
+namespace jsy\generator\parser;
 
 
 class Parser

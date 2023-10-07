@@ -1,16 +1,15 @@
 <?php
 
 
-namespace maodou\generator\generator\logic_skeleton\execute\facade;
+namespace jsy\generator\generator\logic_skeleton\execute\facade;
 
-use maodou\base\utils\UtilsTools;
-use maodou\generator\generator\logic_skeleton\contract\MakeClassAbstract;
+use jsy\base\utils\UtilsTools;
+use jsy\generator\generator\logic_skeleton\contract\MakeClassAbstract;
 use think\Exception;
 
 /**
  * Desc
  * Class MakeFacade
- * @package maodou\generator\generator\logic_skeleton\execute\facade
  */
 class MakeFacade extends MakeClassAbstract
 {

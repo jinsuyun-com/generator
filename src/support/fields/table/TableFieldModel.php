@@ -1,12 +1,12 @@
 <?php
 
 
-namespace maodou\generator\support\fields\table;
+namespace jsy\generator\support\fields\table;
 
 
-use maodou\base\schema\abstracts\SchemaAbstract;
-use maodou\base\schema\support\SchemaField;
-use maodou\generator\support\fields\ModelSchemaField;
+use jsy\base\schema\abstracts\SchemaAbstract;
+use jsy\base\schema\support\SchemaField;
+use jsy\generator\support\fields\ModelSchemaField;
 
 class TableFieldModel extends ModelSchemaField
 {

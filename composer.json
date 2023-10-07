@@ -1,5 +1,5 @@
 {
-    "name": "maodou/generator",
+    "name": "jsy/generator",
     "description": "generator lib",
     "type": "think-extend",
     "license": "Apache-2.0",
@@ -12,12 +12,12 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "maodou\\generator\\": "src"
+            "jsy\\generator\\": "src"
         }
     },
     "require": {
         "topthink/think-migration": "^3.0",
-        "maodou/run": "~1.0",
-        "maodou/base": "~1.0"
+        "jsy/run": "~1.0",
+        "jsy/base": "~1.0"
     }
 }

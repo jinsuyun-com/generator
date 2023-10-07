@@ -1,11 +1,11 @@
 <?php
 
 
-namespace maodou\generator\migration;
+namespace jsy\generator\migration;
 
 
-use maodou\generator\migration\contract\TableActionAbstract;
-use maodou\generator\migration\support\ParseTableFields;
+use jsy\generator\migration\contract\TableActionAbstract;
+use jsy\generator\migration\support\ParseTableFields;
 use think\Collection;
 use think\facade\Db;
 use think\helper\Str;

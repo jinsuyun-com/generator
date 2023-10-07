@@ -1,11 +1,11 @@
 <?php
 
 
-namespace maodou\generator\builder\provider\class_builder;
+namespace jsy\generator\builder\provider\class_builder;
 
 
-use maodou\generator\builder\contract\CodeBuilder;
-use maodou\generator\builder\support\ClassMethod;
+use jsy\generator\builder\contract\CodeBuilder;
+use jsy\generator\builder\support\ClassMethod;
 use think\Collection;
 
 class ClassMethodBuilder implements CodeBuilder

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\migration\contract;
+namespace jsy\generator\migration\contract;
 
 
-use maodou\base\utils\UtilsTools;
+use jsy\base\utils\UtilsTools;
 use think\Exception;
 use think\Model;
 

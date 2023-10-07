@@ -1,11 +1,11 @@
 <?php
 
 
-namespace maodou\generator\migration;
+namespace jsy\generator\migration;
 
 
-use maodou\base\utils\UtilsTools;
-use maodou\generator\migration\contract\MigrationAbstract;
+use jsy\base\utils\UtilsTools;
+use jsy\generator\migration\contract\MigrationAbstract;
 use Phinx\Db\Adapter\AdapterFactory;
 use Phinx\Migration\AbstractMigration;
 use Phinx\Migration\MigrationInterface;

@@ -1,18 +1,17 @@
 <?php
 
 
-namespace maodou\generator\generator\logic_skeleton\execute\model;
+namespace jsy\generator\generator\logic_skeleton\execute\model;
 
 
-use maodou\base\base\GetterSetter;
-use maodou\base\exception\AppException;
-use maodou\base\utils\UtilsTools;
-use maodou\generator\generator\logic_skeleton\contract\MakeClassAbstract;
+use jsy\base\base\GetterSetter;
+use jsy\base\exception\AppException;
+use jsy\base\utils\UtilsTools;
+use jsy\generator\generator\logic_skeleton\contract\MakeClassAbstract;
 use think\helper\Str;
 
 /**
  * Class MakeModel
- * @package maodou\generator\generator\logic_skeleton\execute\model
  * @method MakeModel setModelFullName(string $fullName)
  * @method MakeModel setExtendModel(string $model)
  * @method MakeModel setAddonFields(array $addonFields)

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\generator\logic_skeleton\contract;
+namespace jsy\generator\generator\logic_skeleton\contract;
 
 
-use maodou\base\utils\UtilsTools;
+use jsy\base\utils\UtilsTools;
 
 abstract class MakeServiceAbstract extends MakeClassAbstract
 {

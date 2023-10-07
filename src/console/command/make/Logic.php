@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\console\command\make;
+namespace jsy\generator\console\command\make;
 
 
-use maodou\generator\console\execute\provider\logic\MakeLogic;
+use jsy\generator\console\execute\provider\logic\MakeLogic;
 use think\console\Command;
 use think\console\Input;
 use think\console\input\Argument;
@@ -15,10 +15,10 @@ class Logic extends Command
     protected function configure()
     {
         parent::configure();
-        $this->setName('maodou:makeLogic');
+        $this->setName('jsy:makeLogic');
         $this->setDescription('generate logic class');
         $this->addArgument('actionPath',Argument::REQUIRED,'action full path,eg: dev.UserProfile/index');
-        $this->addArgument('prefixNamespace',Argument::OPTIONAL,'prefix namespace,eg: maodou\dev');
+        $this->addArgument('prefixNamespace',Argument::OPTIONAL,'prefix namespace,eg: jsy\dev');
     }
 
     protected function execute(Input $input, Output $output)

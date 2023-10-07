@@ -1,16 +1,16 @@
 <?php
 
 
-namespace maodou\generator\parser;
+namespace jsy\generator\parser;
 
 
 use JetBrains\PhpStorm\ArrayShape;
-use maodou\generator\parser\support\model\driver\mysql\TableFieldsParser;
-use maodou\generator\parser\support\model\ModelFieldsParser;
-use maodou\generator\parser\support\model\ModelProperty;
-use maodou\generator\parser\support\model\ModelPropertyParser;
-use maodou\generator\support\fields\model\ModelFieldModel;
-use maodou\generator\support\fields\table\TableFieldModel;
+use jsy\generator\parser\support\model\driver\mysql\TableFieldsParser;
+use jsy\generator\parser\support\model\ModelFieldsParser;
+use jsy\generator\parser\support\model\ModelProperty;
+use jsy\generator\parser\support\model\ModelPropertyParser;
+use jsy\generator\support\fields\model\ModelFieldModel;
+use jsy\generator\support\fields\table\TableFieldModel;
 use think\Collection;
 use think\Exception;
 use think\facade\Config;
@@ -110,7 +110,7 @@ class ModelParser
     }
 
     /**
-     * @return \maodou\base\schema\support\SchemaField[]
+     * @return \jsy\base\schema\support\SchemaField[]
      */
     public function getTableFieldsSchema(): array
     {
@@ -118,7 +118,7 @@ class ModelParser
     }
 
     /**
-     * @return \maodou\base\schema\support\SchemaField[]
+     * @return \jsy\base\schema\support\SchemaField[]
      */
     public function getGetterFieldsSchema():array
     {
@@ -131,7 +131,7 @@ class ModelParser
         $this->tableFields = $this->tableFieldsParser->getFields();
         foreach ($this->tableFields as $field){
             /**
-             * @var \maodou\generator\support\fields\table\TableFieldModel $field
+             * @var \jsy\generator\support\fields\table\TableFieldModel $field
              */
             // 弃用字段
             if(in_array($field->getName(),$this->disuseFields)){

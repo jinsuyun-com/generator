@@ -1,7 +1,7 @@
 <?php
 
 
-namespace maodou\generator\migration\contract;
+namespace jsy\generator\migration\contract;
 
 
 use Phinx\Db\Adapter\AdapterFactory;

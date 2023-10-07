@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\builder\support;
+namespace jsy\generator\builder\support;
 
 
-use maodou\generator\builder\ClassBuilder;
+use jsy\generator\builder\ClassBuilder;
 use think\helper\Str;
 
 class ClassMethod

@@ -1,15 +1,14 @@
 <?php
 
 
-namespace maodou\generator\migration\support;
+namespace jsy\generator\migration\support;
 
 
 use think\contract\Arrayable;
 use think\Model;
 
 /**
- * Class MaodouModelField
- * @package maodou\generator\migration\support
+ * Class JsyModelField
  * @property int $model_id
  * @property string $field_name
  * @property string $field_type
@@ -20,7 +19,7 @@ use think\Model;
  * @property array $field_options
  * @property string $field_remark
  */
-class MaodouModelField extends \stdClass
+class JsyModelField extends \stdClass
 {
 
 }

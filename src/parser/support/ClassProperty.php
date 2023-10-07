@@ -1,11 +1,11 @@
 <?php
 
 
-namespace maodou\generator\parser\support;
+namespace jsy\generator\parser\support;
 
 
-use maodou\generator\builder\ClassBuilder;
-use maodou\generator\builder\CodeBuilder;
+use jsy\generator\builder\ClassBuilder;
+use jsy\generator\builder\CodeBuilder;
 use think\Exception;
 
 class ClassProperty
@@ -106,7 +106,7 @@ class ClassProperty
 
     /**
      * @param bool $hideDoc
-     * @return \maodou\generator\parser\support\ClassProperty
+     * @return \jsy\generator\parser\support\ClassProperty
      */
     public function setHideDoc(bool $hideDoc): self
     {
@@ -221,7 +221,7 @@ class ClassProperty
 
     /**
      * @param int $T_ACCESS
-     * @return \maodou\generator\parser\support\ClassProperty
+     * @return \jsy\generator\parser\support\ClassProperty
      * @throws \think\Exception
      */
     public function setAccess(int $T_ACCESS): self
@@ -235,7 +235,7 @@ class ClassProperty
 
     /**
      * @param bool $isStatic
-     * @return \maodou\generator\parser\support\ClassProperty
+     * @return \jsy\generator\parser\support\ClassProperty
      */
     public function setIsStatic(bool $isStatic): self
     {
@@ -245,7 +245,7 @@ class ClassProperty
 
     /**
      * @param string $name
-     * @return \maodou\generator\parser\support\ClassProperty
+     * @return \jsy\generator\parser\support\ClassProperty
      */
     public function setName(string $name): self
     {
@@ -255,7 +255,7 @@ class ClassProperty
 
     /**
      * @param string $type
-     * @return \maodou\generator\parser\support\ClassProperty
+     * @return \jsy\generator\parser\support\ClassProperty
      */
     public function addType(string $type): self
     {
@@ -272,7 +272,7 @@ class ClassProperty
     /**
      * @param mixed $value
      * @param bool $isOriginRender
-     * @return \maodou\generator\parser\support\ClassProperty
+     * @return \jsy\generator\parser\support\ClassProperty
      */
     public function setValue($value,bool $isOriginRender = false): self
     {

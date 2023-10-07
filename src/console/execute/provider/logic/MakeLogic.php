@@ -1,14 +1,14 @@
 <?php
 
 
-namespace maodou\generator\console\execute\provider\logic;
+namespace jsy\generator\console\execute\provider\logic;
 
 
-use maodou\base\exception\AppException;
-use maodou\generator\console\execute\provider\logic\provider\BuildLogic;
-use maodou\generator\console\execute\provider\logic\provider\BuildRequest;
-use maodou\generator\console\execute\provider\logic\provider\BuildResponse;
-use maodou\generator\utils\classloader\facade\MaodouClassLoader;
+use jsy\base\exception\AppException;
+use jsy\generator\console\execute\provider\logic\provider\BuildLogic;
+use jsy\generator\console\execute\provider\logic\provider\BuildRequest;
+use jsy\generator\console\execute\provider\logic\provider\BuildResponse;
+use jsy\generator\utils\classloader\facade\JsyClassLoader;
 use think\console\Output;
 use think\helper\Str;
 
@@ -72,7 +72,7 @@ class MakeLogic
             return $this;
         }
         $this->prefixNamespace = $prefixNamespace;
-        $path = MaodouClassLoader::queryDir($prefixNamespace);
+        $path = JsyClassLoader::queryDir($prefixNamespace);
         if(is_null($path)){
             throw new AppException(sprintf('未找到命名空间前缀【%s】对应的路径',$prefixNamespace));
         }

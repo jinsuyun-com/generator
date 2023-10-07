@@ -1,7 +1,7 @@
 <?php
 
 
-namespace maodou\generator\migration\support;
+namespace jsy\generator\migration\support;
 
 
 class MysqlFieldType

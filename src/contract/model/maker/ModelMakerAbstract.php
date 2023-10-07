@@ -1,8 +1,8 @@
 <?php
 
-namespace maodou\generator\contract\model\maker;
+namespace jsy\generator\contract\model\maker;
 
-use maodou\base\base\GetterSetter;
+use jsy\base\base\GetterSetter;
 
 
 abstract class ModelMakerAbstract

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace maodou\generator\migration\support;
+namespace jsy\generator\migration\support;
 
 
 use think\Exception;
@@ -54,9 +54,9 @@ class ParseTableFields
         return $tableFields;
     }
 
-    protected function parseField(string $key,array $fieldConfig):MaodouModelField
+    protected function parseField(string $key,array $fieldConfig):JsyModelField
     {
-        $tableFiledConfig = new MaodouModelField();
+        $tableFiledConfig = new JsyModelField();
         $tableFiledConfig->model_id = $this->modelId;
         $tableFiledConfig->field_name = $key;
         $tableFiledConfig->field_type = $this->getFieldType($fieldConfig);

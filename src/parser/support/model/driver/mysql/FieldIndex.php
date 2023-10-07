@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\parser\support\model\driver\mysql;
+namespace jsy\generator\parser\support\model\driver\mysql;
 
 
-use maodou\base\base\model\ArrayModel;
+use jsy\base\base\model\ArrayModel;
 
 class FieldIndex extends ArrayModel
 {

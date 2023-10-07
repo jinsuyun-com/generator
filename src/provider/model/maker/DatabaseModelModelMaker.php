@@ -1,18 +1,17 @@
 <?php
 
-namespace maodou\generator\provider\model\maker;
+namespace jsy\generator\provider\model\maker;
 
 
 
 use Carbon\Carbon;
-use maodou\base\exception\AppException;
-use maodou\base\utils\UtilsTools;
-use maodou\generator\contract\model\maker\ModelMakerAbstract;
-use maodou\generator\support\traits\ClassMakerTrait;
+use jsy\base\exception\AppException;
+use jsy\base\utils\UtilsTools;
+use jsy\generator\contract\model\maker\ModelMakerAbstract;
+use jsy\generator\support\traits\ClassMakerTrait;
 
 /**
  * Class DatabaseModelMaker
- * @package maodou\generator\provider\model\maker
  * @method DatabaseModelModelMaker setModelFullName(string $fullName)
  * @method DatabaseModelModelMaker setAddonFields(array $addonFields)
  * @method DatabaseModelModelMaker setModelConnection(string $modelConnection)
@@ -130,19 +129,19 @@ class DatabaseModelModelMaker extends ModelMakerAbstract
     protected function parseTitle():void
     {
         if (empty($this->title) === false){
-            $this->modelProperty[] = sprintf('protected string $maodouTitle = \'%s\';',$this->title);
+            $this->modelProperty[] = sprintf('protected string $jsyTitle = \'%s\';',$this->title);
         }
     }
     protected function parseRemark():void
     {
         if (empty($this->remark) === false){
-            $this->modelProperty[] = sprintf('protected string $maodouRemark = \'%s\';',$this->remark);
+            $this->modelProperty[] = sprintf('protected string $jsyRemark = \'%s\';',$this->remark);
         }
     }
 
     protected function parseCreateTime():void
     {
-        $this->modelProperty[] = sprintf('protected string $maodouCreateTime = \'%s\';',Carbon::now()->toDateTimeString());
+        $this->modelProperty[] = sprintf('protected string $jsyCreateTime = \'%s\';',Carbon::now()->toDateTimeString());
     }
 
 

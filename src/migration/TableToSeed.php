@@ -1,11 +1,11 @@
 <?php
 
 
-namespace maodou\generator\migration;
+namespace jsy\generator\migration;
 
 
-use maodou\generator\builder\CodeBuilder;
-use maodou\generator\migration\contract\TableActionAbstract;
+use jsy\generator\builder\CodeBuilder;
+use jsy\generator\migration\contract\TableActionAbstract;
 use think\facade\Db;
 use think\helper\Str;
 

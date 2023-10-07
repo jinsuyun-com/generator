@@ -2,8 +2,8 @@
 namespace {%namespace%};
 
 
-use maodou\run\base\request\LogicRequest;
-use maodou\run\base\validate\AppValidateRule;
+use jsy\run\base\request\LogicRequest;
+use jsy\run\base\validate\AppValidateRule;
 
 /**
  * Class {%classname%}

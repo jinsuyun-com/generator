@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\parser\support\model;
+namespace jsy\generator\parser\support\model;
 
 
-use maodou\generator\builder\CodeBuilder;
+use jsy\generator\builder\CodeBuilder;
 use think\contract\Arrayable;
 use think\contract\Jsonable;
 use think\helper\Str;

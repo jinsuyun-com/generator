@@ -1,12 +1,12 @@
 <?php
 
 
-namespace maodou\generator\parser\support;
+namespace jsy\generator\parser\support;
 
 
-use maodou\generator\builder\ClassBuilder;
-use maodou\generator\builder\CodeBuilder;
-use maodou\generator\utils\TypeUtils;
+use jsy\generator\builder\ClassBuilder;
+use jsy\generator\builder\CodeBuilder;
+use jsy\generator\utils\TypeUtils;
 
 class MethodParam
 {
@@ -88,7 +88,7 @@ class MethodParam
 
     /**
      * @param string $classname
-     * @return \maodou\generator\parser\support\MethodParam
+     * @return \jsy\generator\parser\support\MethodParam
      */
     public function setClassname(string $classname): self
     {

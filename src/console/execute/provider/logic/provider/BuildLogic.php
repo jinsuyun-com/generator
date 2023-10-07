@@ -1,11 +1,11 @@
 <?php
 
 
-namespace maodou\generator\console\execute\provider\logic\provider;
+namespace jsy\generator\console\execute\provider\logic\provider;
 
 
-use maodou\base\utils\UtilsTools;
-use maodou\generator\console\execute\provider\logic\contract\BuildLogicAbstract;
+use jsy\base\utils\UtilsTools;
+use jsy\generator\console\execute\provider\logic\contract\BuildLogicAbstract;
 use think\helper\Str;
 
 class BuildLogic extends BuildLogicAbstract

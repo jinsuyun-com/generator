@@ -1,15 +1,15 @@
 <?php
 
 
-namespace maodou\generator\builder;
+namespace jsy\generator\builder;
 
 
-use maodou\base\exception\AppException;
-use maodou\base\utils\UtilsTools;
-use maodou\generator\parser\support\ClassMethod;
-use maodou\generator\parser\support\ClassProperty;
-use maodou\generator\parser\support\ClassReflection;
-use maodou\generator\utils\classloader\facade\MaodouClassLoader;
+use jsy\base\exception\AppException;
+use jsy\base\utils\UtilsTools;
+use jsy\generator\parser\support\ClassMethod;
+use jsy\generator\parser\support\ClassProperty;
+use jsy\generator\parser\support\ClassReflection;
+use jsy\generator\utils\classloader\facade\JsyClassLoader;
 use think\helper\Str;
 
 class ClassBuilder

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace maodou\generator\parser\support\model;
+namespace jsy\generator\parser\support\model;
 
 
 class ModelPropertyConfig

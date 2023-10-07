@@ -1,8 +1,8 @@
 <?php
 
-namespace maodou\generator\support\traits;
+namespace jsy\generator\support\traits;
 
-use maodou\base\utils\UtilsTools;
+use jsy\base\utils\UtilsTools;
 
 trait ClassMakerTrait
 {

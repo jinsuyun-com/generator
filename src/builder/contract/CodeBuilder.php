@@ -1,7 +1,7 @@
 <?php
 
 
-namespace maodou\generator\builder\contract;
+namespace jsy\generator\builder\contract;
 
 
 interface CodeBuilder

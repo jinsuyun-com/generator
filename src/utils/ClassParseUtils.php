@@ -1,10 +1,10 @@
 <?php
 
 
-namespace maodou\generator\utils;
+namespace jsy\generator\utils;
 
 
-use maodou\base\utils\UtilsTools;
+use jsy\base\utils\UtilsTools;
 
 class ClassParseUtils
 {
