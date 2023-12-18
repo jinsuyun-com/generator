@@ -74,8 +74,18 @@ abstract class ModelSchemaField implements Arrayable, \ArrayAccess,ISchemaField
     {
         $field = new SchemaField();
         $field->name($this->getName());
-        $field->types(TypeUtils::parseToSchemaType($this->getType()));
+        $types = $this->getType();
+        if (in_array('array',$types)){
+            $field->list();
+            $key = array_search('array',$types);
+            unset($types[$key]);
+        }
+
+
+
+        $field->types(TypeUtils::parseToSchemaType($types));
         $field->remark($this->getComment());
+
         return $field;
     }
 

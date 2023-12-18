@@ -9,6 +9,7 @@ use jsy\generator\support\fields\constant\JsyField;
 use jsy\generator\support\fields\ModelSchemaField;
 use jsy\generator\utils\TypeUtils;
 use phpDocumentor\Reflection\DocBlock\Tags\InvalidTag;
+use phpDocumentor\Reflection\DocBlock\Tags\Return_;
 use phpDocumentor\Reflection\DocBlockFactory;
 use phpDocumentor\Reflection\Types\Context;
 use think\Collection;
@@ -255,7 +256,12 @@ class ModelFieldsParser
             return $this;
         }
 
+
         $types = TypeUtils::parseRefTypes($method->getReturnType());
+
+        $docType = $this->parseMethodReturnTypes($method);
+        $types = array_unique(array_merge($types,$docType));
+
 
         $modelField = new ModelFieldModel($name);
         $isSelf = $method->getDeclaringClass()->getName() === $this->ref->getName();
@@ -366,6 +372,40 @@ class ModelFieldsParser
         $modelMethod->setType('event')->addReturnType('void')->setParams($args)->setComment($comment);
         $this->setEvents($modelMethod);
         return $this;
+    }
+
+    protected function parseMethodReturnTypes(\ReflectionMethod $method):array
+    {
+        $types = [];
+
+        if($method->getDocComment() === false){
+            return $types;
+        }
+
+        $tags = DocBlockFactory::createInstance()->create($method)->getTags();
+        foreach ($tags as $tag){
+            if ($tag->getName() === 'return'){
+                /**
+                 * @var Return_ $tag
+                 */
+                $type = (string)$tag->getType();
+
+                if (empty($type)){
+                    continue;
+                }
+
+                if (str_ends_with($type,'[]')){
+                    $types[] = 'array';
+                    $type = str_replace('[]','',$type);
+                }
+                if (class_exists($type)){
+                    $types[] = $type;
+                }
+            }
+
+        }
+        return $types;
+
     }
 
     /**
